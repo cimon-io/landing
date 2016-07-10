@@ -1,0 +1,9 @@
+services:
+  ruby:
+    from: ruby:2.1.2
+
+server:
+  service: ruby
+  folder: /app
+  cmd: ruby -run -e httpd . -p 80
+  port: 80
